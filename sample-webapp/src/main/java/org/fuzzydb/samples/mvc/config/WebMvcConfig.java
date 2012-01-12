@@ -71,6 +71,7 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
 	public void addViewControllers(ViewControllerRegistry registry) {
 		registry.addViewController("/login");
 		registry.addViewController("/mobile/home");
+		registry.addViewController("/mobile/grid");
 	}
 	
 	@Bean
