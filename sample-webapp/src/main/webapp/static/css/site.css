@@ -17,6 +17,10 @@ html.ui-mobile body.ui-mobile-viewport div#main-page.type-interior div.ui-header
     padding-right: 25px !important;
 }
 
+/* html.ui-mobile body.ui-mobile-viewport div#search-page.ui-page form#command div.ui-btn { */
+/* 	box-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); */
+/* } */
+
 div.attribute {
 	font-size: 80%; padding-left: 10px;
 }

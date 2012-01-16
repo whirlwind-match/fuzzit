@@ -28,21 +28,19 @@
 
 	<div id="main-page" data-role="page" class="type-interior">
 
-		<div data-role="header" data-position="fixed" data-theme="a">
-			<h1><img src="<c:url value="/static/fuzzit/fuzzit-word.png"/>" height=40px alt="fuzzit" />
-			</h1>
-			<a href="<c:url value="/mobile/home"/>" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
-			<a href="#search-page" data-role="button" data-rel="dialog">Match</a> 
+<!-- 		<div data-role="header" data-position="fixed" data-theme="a"> -->
+<!-- 			<h1>Mobile Demo</h1> -->
+<%-- 			<a href="<c:url value="/mobile/home"/>" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-left jqm-home">Home</a> --%>
+<!-- 			<a href="#search-page" data-role="button" data-rel="dialog">Search</a>  -->
 	
-		</div><!-- /header -->
+<!-- 		</div>/header -->
 	
 		<div data-role="content">
 			<tiles:insertAttribute name="content" />
 		</div><!-- /content -->
 	
-		<div data-role="footer" class="footer-docs" data-theme="c">
-<!-- 				<p>&copy; 2011-2012 Whirlwind Match Ltd</p> -->
-		</div>
+<!-- 		<div data-role="footer" class="footer-docs" data-theme="c"> -->
+<!-- 		</div> -->
 	</div><!-- /page -->
 
 	<div id="search-page" data-role="page">
