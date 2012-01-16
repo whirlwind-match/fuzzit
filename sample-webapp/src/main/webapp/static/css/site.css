@@ -1,3 +1,21 @@
+html.ui-mobile body.ui-mobile-viewport div#search-page.ui-page form#command div.ui-btn span.ui-btn-inner,
+.fuzzit-btn {
+/* 	color: lime; */
+	background-color: lime;
+	font-style: italic;
+	font-weight: bold;
+}
+
+html.ui-mobile body.ui-mobile-viewport div#main-page.type-interior div.ui-header a.ui-btn-right span.ui-btn-inner {
+    padding-right: 5px !important;
+}
+
+.ui-btn-text {
+    padding-right: 5px !important;
+}
+.ui-btn-inner {
+    padding-right: 25px !important;
+}
 
 div.attribute {
 	font-size: 80%; padding-left: 10px;
