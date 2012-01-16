@@ -16,14 +16,14 @@
 
 		<fieldset data-role="">
 			<form:select id="options" path="options" >
-				<option>Choose options</option>
+				<option>Options</option>
 				<form:options items="${options}"/>
 			</form:select>
 		</fieldset>
 
 		<fieldset data-role="">
 			<form:select id="colour" path="colour" >
-				<form:option value="">Choose colour</form:option>
+				<form:option value="">Colour</form:option>
 				<form:options items="${colours}"/>
 			</form:select>
 		</fieldset>
@@ -33,6 +33,6 @@
 <%-- 			<form:option value="" /> --%>
 <%-- 			<form:options items="${carMakes}"/>  --%>
 <%-- 		</form:select><form:errors path="carMake"/> --%>
-	<input type="submit" value="Search"/>
+	<input class="fuzzit-btn" type="submit" value="fuzzit"/>
 </form:form>
 

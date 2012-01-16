@@ -15,11 +15,11 @@
 		
 		<fieldset data-role="">
 			<form:select id="newspapers" path="newspapers" >
-				<option>Choose newspapers</option>
+				<option>Newspapers</option>
 				<form:options items="${newspapers}"/>
 			</form:select>
 		</fieldset>
 		
-	<input type="submit" value="Search"/>
+	<input class="fuzzit-btn" type="submit" value="fuzzit"/>
 </form:form>
 

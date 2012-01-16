@@ -14,10 +14,10 @@
 		</fieldset>
 
 		<fieldset data-role="controlgroup" data-type="horizontal">
-			<legend>Meal types:</legend>
+			<legend>Meal Types</legend>
 			<form:checkboxes id="mealTypes" path="mealTypes" items="${mealTypes}"/> <form:errors path="mealTypes"/>
 		</fieldset>
 
-	<input type="submit" value="Search"/>
+	<input class="fuzzit-btn" type="submit" value="fuzzit"/>
 </form:form>
 

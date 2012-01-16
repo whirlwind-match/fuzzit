@@ -3,8 +3,8 @@
 <ul data-role="listview">
 	
 	<li>
-		<h3>Fuzzy Samples</h3>
-		<p>Various examples</p>
+		<h3>Get Started</h3>
+<!-- 		<p>Various examples</p> -->
 
 		<ul>
 			<li><a data-ajax="false" href="<c:url value="/mobile/autos/search"/>">Autos</a></li>
@@ -14,7 +14,7 @@
 	</li>
 	<li>
 	<h3>Connections</h3>
-		<p>Social Connections</p>
+<!-- 		<p>Social Connections</p> -->
 
 		<ul>
 			<li><a data-ajax="false" href="<c:url value="/connect"/>">Connections</a></h4></li>

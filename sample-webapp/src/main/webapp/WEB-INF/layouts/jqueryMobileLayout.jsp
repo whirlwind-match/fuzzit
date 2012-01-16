@@ -8,7 +8,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<title>fuzzydb Mobile Demo</title> 
+	<title>fuzzit</title> 
 <!-- 	<link rel="stylesheet"  href="//code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />   -->
 <!-- 	<script src="//code.jquery.com/jquery-1.6.4.js"></script> -->
 <!-- 	<script src="//code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script> -->
@@ -29,9 +29,9 @@
 	<div id="main-page" data-role="page" class="type-interior">
 
 		<div data-role="header" data-position="fixed" data-theme="a">
-			<h1>Mobile Demo</h1>
+			<h1>fuzzit</h1>
 			<a href="<c:url value="/mobile/home"/>" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
-			<a href="#search-page" data-role="button" data-rel="dialog">Search</a> 
+			<a href="#search-page" data-role="button" data-rel="dialog">Match</a> 
 	
 		</div><!-- /header -->
 	
