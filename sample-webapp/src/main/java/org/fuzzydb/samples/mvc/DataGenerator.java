@@ -72,7 +72,7 @@ public class DataGenerator implements InitializingBean {
 
 
 	public Vehicle createRandomVehicle() {
-		String name = "Wreck";
+		String name = "Compact";
 		Vehicle item = new Vehicle(name);
 		BeanWrapper wrapper = new BeanWrapperImpl(item);
 
