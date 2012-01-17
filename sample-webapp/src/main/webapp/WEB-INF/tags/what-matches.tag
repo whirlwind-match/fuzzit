@@ -6,7 +6,8 @@
 <%-- <%@ attribute name="popupHelp" required="true" %> --%>
 
 
-	    	<div style="padding: 11px 2px"><b>What matches?</b>
+	    	<div style="padding: 10px 0px">
+<!-- 	    	<h3>What matches?</h3> -->
 			    <c:forEach items="${result.score.scorerAttrNames}" var="match">
 			    	<c:set var="fwd" value="${f:forwardsScore(result,match)}"/>
 			    	<c:choose>
@@ -17,8 +18,8 @@
 <!--     				</div> -->
 				    	</c:when>
 				    	<c:otherwise>
-			    	<div style="padding-left: 10px; padding-top: 1px;">
-			    		<span class="score" style="background-color: ${f:floatToCssRGBColorSat(fwd,0.26)}">${f:round(fwd * 100.1)}%</span>
+			    	<div style="padding-left: 0px; padding-top: 1px;">
+			    		<span class="score" style="background-color: ${f:floatToCssRGBColorSat(fwd,0.86)}">${f:round(fwd * 100.1)}%</span>
 			    		${match}: 
 			    	</div>
 				    	</c:otherwise>

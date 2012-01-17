@@ -6,5 +6,5 @@
 <!-- There is a score result of "Distance" as well as the score for the relevant scorer -->
 <c:set var="score" value="${f:forwardsScore(result,'Distance')}"/>
 <c:if test="${!empty f:toString(score)}">
-	<span class="round" style="background-color: ${f:floatToCssRGBColorSat(f:forwardsScore(result,'Within 100 miles'),0.26)}">${f:toString(score)} miles</span>
+	<div class="round" style="width:75px; background-color: ${f:floatToCssRGBColorSat(f:forwardsScore(result,'Within 100 miles'),0.26)}">${f:toString(score)} miles</div>
 </c:if>

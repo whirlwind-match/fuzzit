@@ -23,6 +23,11 @@
 .ui-collapsible-set {
     margin: 0;
 }
+div.ui-collapsible-set div.ui-collapsible-set {
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
 .ui-content .ui-listview {
     margin: 0 -15px;
 }

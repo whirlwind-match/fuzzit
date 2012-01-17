@@ -5,5 +5,6 @@
         
 	<definition name="page" templateExpression="/WEB-INF/layouts/page.jsp" />
 	<definition name="mobile" templateExpression="/WEB-INF/layouts/jqueryMobileLayout.jsp" />
+	<definition name="mobilePlusSearch" templateExpression="/WEB-INF/layouts/jqueryMobilePlusSearch.jsp" />
         
 </tiles-definitions>

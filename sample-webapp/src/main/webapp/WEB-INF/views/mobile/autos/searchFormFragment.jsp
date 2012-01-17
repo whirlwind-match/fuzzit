@@ -2,15 +2,16 @@
 <%@ taglib prefix="sample" tagdir="/WEB-INF/tags" %>
 <%@ taglib prefix="mobile" tagdir="/WEB-INF/tags/mobile" %>
 
-
 <form:form action="search" method="post" >
 
 		<fieldset data-role="controlgroup" data-type="horizontal">
-			<mobile:edit-input attrName="postcode" popupHelp="Where? (Try the first part of a UK postcode e.g. SE1)" />
+			<mobile:edit-input attrName="postcode" popupHelp="Where? (Short UK postcode e.g. SE1)"  />
 		</fieldset>
 
-		<fieldset data-role="controlgroup" data-type="horizontal">
-			<mobile:edit-input attrName="price" popupHelp="Target price..." />
+		<fieldset data-role="fieldcontain" data-type="horizontal">
+<%-- 			<mobile:edit-input attrName="price" popupHelp="Target price..." /> --%>
+			<label for="price">Price</label>
+   			<input type="range" name="price" id="price" value="9000" min="100" max="90000"  />
 		</fieldset>
 
 

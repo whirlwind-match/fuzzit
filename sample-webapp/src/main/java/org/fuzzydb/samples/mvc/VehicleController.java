@@ -41,7 +41,9 @@ public class VehicleController extends AbstractDataController<Vehicle> {
 
 	@Override
 	protected Vehicle getSearchForm() {
-		return new Vehicle("Entered search");
+		Vehicle vehicle = new Vehicle("Entered search");
+		vehicle.setPostcode("W1B");
+		return vehicle;
 	}
 
 	

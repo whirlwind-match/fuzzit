@@ -17,12 +17,26 @@ html.ui-mobile body.ui-mobile-viewport div#main-page.type-interior div.ui-header
     padding-right: 25px !important;
 }
 
+.ui-btn-up-c {
+	    font-weight: normal;
+}
+.ui-collapsible-content {
+    background: none repeat scroll 0 0 #444444;
+    color: #FFFFFF;
+    text-shadow: 0 1px 0 #444444;}
+
 /* html.ui-mobile body.ui-mobile-viewport div#search-page.ui-page form#command div.ui-btn { */
 /* 	box-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); */
 /* } */
 
+.ui-link {
+    color: #FFFFFF !important;
+    font-weight: normal !important;
+    text-decoration: none;
+}
+
 div.attribute {
-	font-size: 80%; padding-left: 10px;
+/* 	font-size: 80%; padding-left: 10px; */
 }
 
 div.item-outer {
@@ -43,6 +57,21 @@ span.overall-score {
 	font-weight: bold; 
 }
 
+span.score-val {
+    position: relative;
+    top: 20px;
+}
+
+span.overall-score-circle {
+	float:right; 
+	width: 60px; height:60px; 
+	border-radius: 30px; 
+	vertical-align:middle;
+	text-align:center; 
+	font-size: normal;
+	font-weight: bold; 
+}
+
 span.score {
 	float:right; 
 	width: 50px; 
@@ -51,9 +80,11 @@ span.score {
 }
 
 div.round span, div.round, span.round {
-	border-radius: 5px; 
+/* 	border-radius: 5px;  */
 	padding: 0px 4px;
-	margin-bottom:0px;
+	margin-bottom:2px;
+	margin-top: 2px;
+	border: 1px black solid;
 }
 
 

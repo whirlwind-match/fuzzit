@@ -32,6 +32,7 @@
 			<h1><img src="<c:url value="/static/fuzzit/fuzzit-word.png"/>" height=40px alt="fuzzit" />
 			</h1>
 			<a href="<c:url value="/mobile/home"/>" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
+			<a href="#search-page" data-role="button" data-rel="page">Search</a> 
 	
 		</div><!-- /header -->
 	
@@ -43,6 +44,15 @@
 <!-- 				<p>&copy; 2011-2012 Whirlwind Match Ltd</p> -->
 		</div>
 	</div><!-- /page -->
+
+	<div id="search-page" data-role="page" class="type-interior">
+<!-- 		<div data-role="header" data-position="fixed" data-theme="c"> -->
+			<h3 style="text-align: center;">Search</h3>
+			<div data-role="content">
+				<tiles:insertAttribute name="searchContent" defaultValue=""/>
+			</div>
+<!-- 		</div> -->
+	</div>
 
 	</body>
 	</html>
