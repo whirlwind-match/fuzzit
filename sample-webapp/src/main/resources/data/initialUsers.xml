@@ -1,22 +1,8 @@
 <objects>
     <org.fuzzydb.samples.security.WhirlwindUserDetails>
-        <email>guest@fuzzydb.org</email>
-        <username>guest@fuzzydb.org</username>
+        <email>guest@justfuzzit.com</email>
+        <username>guest@justfuzzit.com</username>
         <password>honoured</password>
-        <accountNonExpired>true</accountNonExpired>
-        <accountNonLocked>true</accountNonLocked>
-        <credentialsNonExpired>true</credentialsNonExpired>
-        <enabled>true</enabled>
-        <authorities>
-            <org.springframework.security.core.authority.GrantedAuthorityImpl>
-                <role>USER</role>
-            </org.springframework.security.core.authority.GrantedAuthorityImpl>
-        </authorities>        
-    </org.fuzzydb.samples.security.WhirlwindUserDetails>
-    <org.fuzzydb.samples.security.WhirlwindUserDetails>
-        <email>two@two.com</email>
-        <username>two@two.com</username>
-        <password>asdfsdfsd</password>
         <accountNonExpired>true</accountNonExpired>
         <accountNonLocked>true</accountNonLocked>
         <credentialsNonExpired>true</credentialsNonExpired>

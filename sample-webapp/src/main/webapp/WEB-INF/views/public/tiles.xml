@@ -3,11 +3,11 @@
 
 <tiles-definitions>
 
-	<definition name="mobile/fuzzit" extends="mobileHeadless">
-		<put-attribute name="content" value="mobile.home.content" />
+	<definition name="public/login" extends="mobile">
+		<put-attribute name="content" value="public.login" />
 	</definition>
 
-	<definition name="mobile.home.content" templateExpression="/WEB-INF/views/fuzzit/mobile/home.jsp">
+	<definition name="public.login" templateExpression="/WEB-INF/views/public/login.jsp">
 	</definition>
 
 </tiles-definitions>

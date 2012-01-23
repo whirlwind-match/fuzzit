@@ -1,6 +1,5 @@
 <jsp:directive.include file="/WEB-INF/includes/includes.jsp"/>
 <jsp:directive.include file="/WEB-INF/includes/header.jsp"/>
-<script type="text/javascript">dojo.require("dijit.TitlePane");</script>
 
 <div style="margin-top:50px">
 	<a href="mobile/grid">

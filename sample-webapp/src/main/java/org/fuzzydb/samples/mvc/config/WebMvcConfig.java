@@ -84,6 +84,7 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
 		registry.addViewController("/login");
+		registry.addViewController("/public/login");
 		registry.addViewController("/mobile/home");
 		registry.addViewController("/mobile/grid");
 		registry.addViewController("/fuzzit/mobile/home");
