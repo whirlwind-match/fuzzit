@@ -6,6 +6,13 @@ html.ui-mobile body.ui-mobile-viewport div#search-page.ui-page form#command div.
 	font-weight: bold;
 }
 
+body {
+	font-family: 'Droid Sans', sans-serif;
+}
+h3 {
+	font-family: 'Righteous', cursive;
+}
+
 html.ui-mobile body.ui-mobile-viewport div#main-page.type-interior div.ui-header a.ui-btn-right span.ui-btn-inner {
     padding-right: 5px !important;
 }
