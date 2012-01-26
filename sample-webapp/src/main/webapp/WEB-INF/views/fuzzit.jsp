@@ -3,7 +3,7 @@
 
 <div style="margin-top:50px">
 	<a href="mobile/grid">
-	<img style="display:block;margin:auto; width:90%" alt="fuzzit fuzzy|mobile|search" 
+	<img style="display:block;margin:auto; width:90%; max-width: 600px" alt="fuzzit fuzzy|mobile|search" 
 		src="<spring:url value="/static/fuzzit/fuzzit-logo.png" htmlEscape="true" />"/>
 	</a>
 </div>
