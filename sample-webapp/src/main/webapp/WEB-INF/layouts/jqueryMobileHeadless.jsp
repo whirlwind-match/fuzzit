@@ -6,12 +6,6 @@
 <head>
 	<title>fuzzit</title> 
 	<tiles:insertAttribute name="headCommonContent" />
-	<script type="text/javascript">
-		$(document).bind('mobileinit',function(){
-		   $.mobile.selectmenu.prototype.options.nativeMenu = false;
-		   $.mobile.ajaxEnabled = false;
-		});
-	</script>
 </head>
 
 <body> 
