@@ -8,7 +8,7 @@
 
 	    	<div style="padding: 10px 0px">
 <!-- 	    	<h3>What matches?</h3> -->
-			    <c:forEach items="${result.score.scorerAttrNames}" var="match">
+			    <c:forEach items="${result.score.scoreEntryNames}" var="match">
 			    	<c:set var="fwd" value="${f:forwardsScore(result,match)}"/>
 			    	<c:choose>
 				    	<c:when test="${match eq 'Distance'}">
