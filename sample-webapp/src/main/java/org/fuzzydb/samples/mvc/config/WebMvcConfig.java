@@ -89,6 +89,7 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
 		registry.addViewController("/mobile/grid");
 		registry.addViewController("/fuzzit/mobile/home");
 		registry.addViewController("/fuzzit");
+		registry.addViewController("/public/about");
 	}
 	
 	@Bean
