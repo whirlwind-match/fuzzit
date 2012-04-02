@@ -1,0 +1,17 @@
+Theme: Long term memory - remember our friends
+----------------------------------------------
+- Cloud Foundry persistence of user profiles
+- Backup of CF data
+- Verify can scale
+
+Theme: Client app quick wins
+----------------------------
+- Use location to find lat-lon and lookup postcode for that location
+- Social connect - mobile friendly
+- Get last Facebook location
+- Get last Twitter location
+
+Tech stories:
+-------------
+- As a developer I can request matching using lat,lon
+  - StringToGeoLocation needs to be able to accept {lat: nn.nn, lon: nn.nn}  (i.e. arb JSON params which will then map to converter)
