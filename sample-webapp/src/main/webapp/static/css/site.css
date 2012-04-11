@@ -9,8 +9,10 @@ html.ui-mobile body.ui-mobile-viewport div#search-page.ui-page form#command div.
 .big-link {
 /* 	font-family: 'Droid Sans', sans-serif; */
 	font-weight: normal;
-	font-size: 300%;
+	width: 70%;
+	font-size: 250%;
 	text-decoration: none;
+	text-align: center;
 	color: #00CC2E;
 	border-radius: 32px;
 	border: 0px solid #eee;

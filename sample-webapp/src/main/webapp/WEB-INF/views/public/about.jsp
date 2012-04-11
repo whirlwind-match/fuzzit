@@ -18,9 +18,9 @@
 			src="<spring:url value="/static/fuzzit/fuzzit-logo.png" htmlEscape="true" />"/>
 		</a>
 	</div>
+	<p style="font-weight: bold; font-size: larger; margin-top:0px">Adesina A. Lalude</p>	
 	<img style="margin-left:10px; width: 100px; float: right" alt="Adesina Lalude" 
 			src="<spring:url value="/static/fuzzit/alalude.jpg" htmlEscape="true" />"/>
-	<p style="font-weight: bold; font-size: larger; margin-top:0px">Adesina A. Lalude</p>	
 	<p>
 	In September 2010 Adesina joined Capgemini Consulting's Global Team where he reported to the firm's
 	CEO and helped its C-suite executives lead global strategic initiatives on branding, staffing, and 
@@ -37,9 +37,10 @@
 	from the University of Southern California where his studies focused on finance, hardware 
 	architecture, and large scale software systems.
 	</p>
+	<br/>
+	<p style="font-weight: bold; font-size: larger; margin-top:0px">Neale Upstone</p>	
 	<img style="margin-left:10px; width: 100px; float: right" alt="Neale Upstone" 
 			src="<spring:url value="/static/fuzzit/nupstone.jpg" htmlEscape="true" />"/>
-	<p style="font-weight: bold; font-size: larger; margin-top:0px">Neale Upstone</p>	
 
 	<p>
 	Neale is a problem solver at heart.  He sees a problem and cannot resist finding
