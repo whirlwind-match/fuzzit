@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ImportResource;
 import org.springframework.oxm.xstream.XStreamMarshaller;
 
 @Configuration
-@ImportResource("classpath:/fuzzy-repository-context.xml")
+@ImportResource({"classpath:/fuzzy-repository-context.xml", "classpath:/db1-repository-context.xml"})
 public class FuzzyDatabaseConfig {
 
 	@Bean
