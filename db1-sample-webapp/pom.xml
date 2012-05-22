@@ -33,6 +33,12 @@
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.wwm.db1</groupId>
+			<artifactId>DbServer</artifactId>
+			<version>1.0-SNAPSHOT</version>
+			<scope>test</scope>
+		</dependency>
 
 		<dependency>
 			<groupId>org.apache.geronimo.specs</groupId>
@@ -243,8 +249,25 @@
 		</pluginRepository>
 	</pluginRepositories>
 
-	<build>
-		<plugins>
+    <build>
+    	<defaultGoal>exec:java</defaultGoal>
+    	<plugins>
+    		<plugin>
+    			<groupId>org.codehaus.mojo</groupId>
+    			<artifactId>exec-maven-plugin</artifactId>
+    			<version>1.2</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<mainClass>likemynds.db.server.RunServer</mainClass>
+					<classpathScope>test</classpathScope>
+    			</configuration>
+    		</plugin>
 			<plugin>
 				<groupId>org.cloudfoundry</groupId>
 				<artifactId>cf-maven-plugin</artifactId>
