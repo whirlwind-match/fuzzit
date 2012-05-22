@@ -1,0 +1,9 @@
+<EnumDefinition name="numberOfPeople">
+    <string>1person</string>
+    <string>2people</string>
+    <string>3people</string>
+    <string>4people</string>
+    <string>5people</string>
+    <string>6people</string>
+    <string>7people</string>
+</EnumDefinition>

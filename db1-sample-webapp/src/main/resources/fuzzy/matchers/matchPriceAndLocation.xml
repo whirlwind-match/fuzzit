@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScoreConfiguration name="matchPriceAndLocation">
+
+
+    <VectorDistanceScorer>
+        <name>Within 100 miles</name>
+        <scorerAttrId>location</scorerAttrId>
+        <otherAttrId>location</otherAttrId>
+        <range>100</range>
+        <preferClose>true</preferClose>
+        <!-- Asymptotic scorer tends to zero at infinity -->
+        <scoreMapper class="AsymptoticScoreMapper">
+            <squareness>3</squareness> 
+            <!-- Will become valueAtBoundary once migrated away from XStream for reading this -->
+            <inverseValueAtBoundary>1.25</inverseValueAtBoundary> 
+            <!-- i.e. score is 80% at boundary  -->
+        </scoreMapper>
+        <weight>0.7</weight>
+    </VectorDistanceScorer>
+
+    <SimilarFloatValueScorer>
+        <name>Good Price Match</name>
+        <scorerAttrId>price</scorerAttrId>
+        <otherAttrId>price</otherAttrId>
+        <expectedRange>10000</expectedRange>
+<!--         <scoreMapper class="AsymptoticScoreMapper"> -->
+<!--             <squareness>2</squareness>  -->
+<!--             <inverseValueAtBoundary>2</inverseValueAtBoundary>  -->
+<!--         </scoreMapper> -->
+        <weight>0.7</weight>
+    </SimilarFloatValueScorer>
+
+
+</ScoreConfiguration>

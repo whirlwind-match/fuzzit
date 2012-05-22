@@ -1,0 +1,9 @@
+<EnumDefinition name="liftType">
+    <string>OfferingLift</string>
+    <string>WantLift</string>
+    <string>Both</string>
+
+    <string>WantCycleBuddy</string>
+    <string>WantWalkingBuddy</string>
+    <string>WantTaxiSharers</string>
+</EnumDefinition>

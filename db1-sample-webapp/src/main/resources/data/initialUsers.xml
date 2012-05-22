@@ -1,0 +1,16 @@
+<objects>
+    <org.fuzzydb.samples.security.WhirlwindUserDetails>
+        <email>guest@justfuzzit.com</email>
+        <username>guest@justfuzzit.com</username>
+        <password>honoured</password>
+        <accountNonExpired>true</accountNonExpired>
+        <accountNonLocked>true</accountNonLocked>
+        <credentialsNonExpired>true</credentialsNonExpired>
+        <enabled>true</enabled>
+        <authorities>
+            <org.springframework.security.core.authority.GrantedAuthorityImpl>
+                <role>USER</role>
+            </org.springframework.security.core.authority.GrantedAuthorityImpl>
+        </authorities>        
+    </org.fuzzydb.samples.security.WhirlwindUserDetails>
+</objects>

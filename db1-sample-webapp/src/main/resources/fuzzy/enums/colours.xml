@@ -1,0 +1,12 @@
+<EnumDefinition name="colours">
+    <string>White</string>
+    <string>Silver</string>
+    <string>Grey</string>
+    <string>Black</string>
+    <string>Blue</string>
+    <string>Purple</string>
+    <string>Red</string>
+    <string>Orange</string>
+    <string>Yellow</string>
+    <string>Green</string>
+</EnumDefinition>

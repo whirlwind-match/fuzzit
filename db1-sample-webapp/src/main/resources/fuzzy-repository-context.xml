@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:fuzzy="http://www.fuzzydb.org/schema/spring"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.fuzzydb.org/schema/spring http://static.fuzzydb.org/schema/spring/spring-fuzzy-1.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+
+	<context:annotation-config/>
+
+    <tx:annotation-driven mode="aspectj" transaction-manager="transactionManager" />
+    <fuzzy:tx-manager />
+
+    <fuzzy:embedded-database persistent="false" />
+    <fuzzy:initialize />
+
+    <fuzzy:repositories base-package="org.fuzzydb.samples.repositories" />
+
+<!--     <bean id="marshaller" class="org.springframework.oxm.xstream.XStreamMarshaller"> -->
+<!--         <property name="aliases"> -->
+<!--             <map> -->
+<!--                 <entry key="objects" value="java.util.ArrayList"/> -->
+<!--             </map> -->
+<!--         </property> -->
+<!--     </bean> -->
+
+    
+    <bean id="userInitialiser" class="com.wwm.db.spring.repository.RepositoryInitializer">
+        <constructor-arg name="repo" ref="userRepository"/>
+        <constructor-arg name="unmarshaller" ref="marshaller"/>
+        <property name="resources" value="classpath:/data/initialUsers.xml"/>
+    </bean>
+    
+    <bean id="peopleInitialiser" class="com.wwm.db.spring.repository.RepositoryInitializer">
+        <constructor-arg name="repo" ref="personRepository"/>
+        <constructor-arg name="unmarshaller" ref="marshaller"/>
+        <property name="resources" value="classpath:/data/initialPeople.xml"/>
+    </bean>
+
+    <bean id="cafeInitialiser" class="com.wwm.db.spring.repository.RepositoryInitializer">
+        <constructor-arg name="repo" ref="cafeRepository"/>
+        <constructor-arg name="unmarshaller" ref="marshaller"/>
+        <property name="resources" value="classpath:/data/initialCafes.xml"/>
+    </bean>
+
+    <bean id="vehicleInitialiser" class="com.wwm.db.spring.repository.RepositoryInitializer">
+        <constructor-arg name="repo" ref="vehicleRepository"/>
+        <constructor-arg name="unmarshaller" ref="marshaller"/>
+        <property name="resources" value="classpath:/data/initialAutos.xml"/>
+    </bean>
+
+    <bean id="randomGenerator" class="com.wwm.db.spring.random.RandomAttributeSource"/>
+    <bean id="postcodeConverter" class="com.wwm.postcode.PostcodeConvertor" />
+
+</beans>

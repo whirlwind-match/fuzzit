@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+	<definition name="mobile/grid" extends="mobile">
+		<put-attribute name="content" value="mobile.grid.content" />
+	</definition>
+
+	<definition name="mobile/home" extends="mobile">
+		<put-attribute name="content" value="mobile.home.content" />
+	</definition>
+
+	<definition name="mobile/autos/search" extends="mobilePlusSearch">
+		<put-attribute name="content" value="autos.search" />
+		<put-attribute name="searchContent" value="autos.searchContent" />
+	</definition>
+
+	<definition name="mobile/cafes/search" extends="mobilePlusSearch">
+		<put-attribute name="content" value="cafes.search" />
+		<put-attribute name="searchContent" value="cafes.searchContent" />
+	</definition>
+
+	<definition name="mobile/people/search" extends="mobilePlusSearch">
+		<put-attribute name="content" value="people.search" />
+		<put-attribute name="searchContent" value="people.searchContent" />
+	</definition>
+
+	<definition name="mobile.grid.content" templateExpression="/WEB-INF/views/mobile/grid.jsp">
+	</definition>
+
+	<definition name="mobile.home.content" templateExpression="/WEB-INF/views/mobile/home.jsp">
+	</definition>
+
+	<definition name="autos.search" templateExpression="/WEB-INF/views/mobile/search-accordion.jsp">	
+		<put-attribute name="resultSummary" value="/WEB-INF/views/mobile/autos/resultSummary.jsp" />
+		<put-attribute name="resultDetail" value="/WEB-INF/views/mobile/autos/resultDetail.jsp" />
+	</definition>
+
+	<definition name="autos.searchContent" templateExpression="/WEB-INF/views/mobile/autos/searchFormFragment.jsp">
+	</definition>
+	
+	<definition name="cafes.search" templateExpression="/WEB-INF/views/mobile/search-accordion.jsp">	
+		<put-attribute name="resultSummary" value="/WEB-INF/views/mobile/cafes/resultSummary.jsp" />
+		<put-attribute name="resultDetail" value="/WEB-INF/views/mobile/cafes/resultDetail.jsp" />
+	</definition>
+
+	<definition name="cafes.searchContent" templateExpression="/WEB-INF/views/mobile/cafes/searchFormFragment.jsp">
+	</definition>
+
+	<definition name="people.search" templateExpression="/WEB-INF/views/mobile/search-accordion.jsp">	
+		<put-attribute name="resultSummary" value="/WEB-INF/views/mobile/people/resultSummary.jsp" />
+		<put-attribute name="resultDetail" value="/WEB-INF/views/mobile/people/resultDetail.jsp" />
+	</definition>
+
+	<definition name="people.searchContent" templateExpression="/WEB-INF/views/mobile/people/searchFormFragment.jsp">
+	</definition>
+
+</tiles-definitions>

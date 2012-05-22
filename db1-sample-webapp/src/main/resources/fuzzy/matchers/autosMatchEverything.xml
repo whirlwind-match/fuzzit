@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScoreConfiguration name="autosMatchEverything">
+
+    <EnumMatchScorer>
+        <name>Same Make</name>
+        <scorerAttrId>carMake</scorerAttrId>
+        <otherAttrId>carMake</otherAttrId>
+        <weight>0.99</weight>
+    </EnumMatchScorer>        
+
+    <OptionsScorer>
+        <name>Options</name>
+        <scorerAttrId>options</scorerAttrId>
+        <otherAttrId>options</otherAttrId>
+        <weight>0.99</weight>
+        <scoreNull>true</scoreNull>
+        <scoreOnNull>0.0</scoreOnNull>
+		<noScoreDirection>reverse</noScoreDirection>
+    </OptionsScorer>        
+
+    <VectorDistanceScorer>
+        <name>Within 100 miles</name>
+        <scorerAttrId>location</scorerAttrId>
+        <otherAttrId>location</otherAttrId>
+        <range>100</range>
+        <preferClose>true</preferClose>
+        <!-- Asymptotic scorer tends to zero at infinity -->
+        <scoreMapper class="AsymptoticScoreMapper">
+            <squareness>3</squareness> 
+            <!-- Will become valueAtBoundary once migrated away from XStream for reading this -->
+            <inverseValueAtBoundary>1.25</inverseValueAtBoundary> 
+            <!-- i.e. score is 80% at boundary  -->
+        </scoreMapper>
+        <weight>0.7</weight>
+    </VectorDistanceScorer>
+
+    <SimilarFloatValueScorer>
+        <name>Good Price Match</name>
+        <scorerAttrId>price</scorerAttrId>
+        <otherAttrId>price</otherAttrId>
+        <expectedRange>10000</expectedRange>
+<!--         <scoreMapper class="AsymptoticScoreMapper"> -->
+<!--             <squareness>2</squareness>  -->
+<!--             <inverseValueAtBoundary>2</inverseValueAtBoundary>  -->
+<!--         </scoreMapper> -->
+        <weight>0.7</weight>
+    </SimilarFloatValueScorer>
+
+    <SimilarFloatValueScorer>
+        <name>Year</name>
+        <scorerAttrId>year</scorerAttrId>
+        <otherAttrId>year</otherAttrId>
+        <expectedRange>5</expectedRange> 
+        <weight>0.7</weight>
+    </SimilarFloatValueScorer>
+
+    <EnumScoresMapScorer>
+        <name>Similar Colour</name>
+        <scorerAttrId>colour</scorerAttrId>
+        <otherAttrId>colour</otherAttrId>
+        <filter>false</filter>
+        <weight>0.7</weight>
+        <map scorerEnumDefinition="colours" otherEnumDefinition="colours" url="classpath:/fuzzy/matchers/similarColourEnumMap.html"/>
+    </EnumScoresMapScorer>
+
+    <SimilarFloatValueScorer>
+        <name>Power</name>
+        <scorerAttrId>horsePower</scorerAttrId>
+        <otherAttrId>horsePower</otherAttrId>
+        <expectedRange>40</expectedRange> 
+<!--         <scoreMapper class="AsymptoticScoreMapper"> -->
+<!--             <squareness>2</squareness>  -->
+<!--             <inverseValueAtBoundary>2</inverseValueAtBoundary>  -->
+<!--         </scoreMapper> -->
+        <weight>0.7</weight>
+    </SimilarFloatValueScorer>
+
+    <SimilarFloatValueScorer>
+        <name>Emissions</name>
+        <scorerAttrId>co2emissions</scorerAttrId>
+        <otherAttrId>co2emissions</otherAttrId>
+        <expectedRange>40</expectedRange> 
+<!--         <scoreMapper class="AsymptoticScoreMapper"> -->
+<!--             <squareness>2</squareness>  -->
+<!--             <inverseValueAtBoundary>2</inverseValueAtBoundary>  -->
+<!--         </scoreMapper> -->
+        <weight>0.7</weight>
+    </SimilarFloatValueScorer>
+    
+    <SimilarFloatValueScorer>
+        <name>MPG</name>
+        <scorerAttrId>mpgCombined</scorerAttrId>
+        <otherAttrId>mpgCombined</otherAttrId>
+        <expectedRange>10</expectedRange> 
+<!--         <scoreMapper class="AsymptoticScoreMapper"> -->
+<!--             <squareness>2</squareness>  -->
+<!--             <inverseValueAtBoundary>2</inverseValueAtBoundary>  -->
+<!--         </scoreMapper> -->
+        <weight>0.7</weight>
+    </SimilarFloatValueScorer>
+
+</ScoreConfiguration>
