@@ -5,20 +5,24 @@ import java.util.Collection;
 import java.util.Collections;
 
 import likemynds.db.DbObject;
+import likemynds.db.KeyFactory;
+import likemynds.db.query.SortableString;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import com.wwm.db.annotations.Key;
+
 
 public class WhirlwindUserDetails extends DbObject implements UserDetails {
 
 	private static final long serialVersionUID = 1L;
 
-	@SuppressWarnings("unused")
 	@Id
-	private final String email;
+	@Key(unique=true)
+	private SortableString email;
 
 	private final String firstName;
 
@@ -42,7 +46,7 @@ public class WhirlwindUserDetails extends DbObject implements UserDetails {
 	public WhirlwindUserDetails(String username, String password,
 			String firstName, String lastName,
 			Collection<? extends GrantedAuthority> authorities) {
-		email = username;
+		email = KeyFactory.valueOf(username);
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.authorities = new ArrayList(authorities);
@@ -58,6 +62,10 @@ public class WhirlwindUserDetails extends DbObject implements UserDetails {
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		return authorities;
+	}
+	
+	public String getEmail() {
+		return email.getValue();
 	}
 	
 	public String getFirstName() {
@@ -96,6 +104,10 @@ public class WhirlwindUserDetails extends DbObject implements UserDetails {
 	@Override
 	public boolean isEnabled() {
 		return enabled;
+	}
+	
+	public void setEmail(String email) {
+		this.email = KeyFactory.valueOf(email);
 	}
 	
 	static public WhirlwindUserDetails createEnabledUser(String email,

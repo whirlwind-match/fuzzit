@@ -1,5 +1,7 @@
 package org.fuzzydb.samples.security;
 
+import likemynds.db.KeyFactory;
+
 import org.fuzzydb.samples.repositories.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,7 +31,7 @@ public class WhirlwindUserDetailsService implements UserDetailsService {
 	@Override
 	public UserDetails loadUserByUsername(String username)
 			throws UsernameNotFoundException, DataAccessException {
-		WhirlwindUserDetails userDetails = repository.findOne(username);
+		WhirlwindUserDetails userDetails = repository.findOne(KeyFactory.valueOf(username));
 		if (userDetails == null) {
 			throw new UsernameNotFoundException("'" + username + "' is not a registered user id");
 		}

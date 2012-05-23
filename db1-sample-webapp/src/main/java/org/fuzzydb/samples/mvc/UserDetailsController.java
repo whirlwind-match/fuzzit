@@ -3,6 +3,8 @@ package org.fuzzydb.samples.mvc;
 
 import javax.validation.Valid;
 
+import likemynds.db.KeyFactory;
+
 import org.fuzzydb.samples.mvc.message.Message;
 import org.fuzzydb.samples.mvc.message.MessageType;
 import org.fuzzydb.samples.repositories.UserRepository;
@@ -72,7 +74,7 @@ public class UserDetailsController {
 
 	@Transactional(readOnly=true)
 	private boolean exists(SignupForm form) {
-		return userRepo.exists(form.getEmail());
+		return userRepo.exists(KeyFactory.valueOf(form.getEmail()));
 	}
 
 	@Transactional

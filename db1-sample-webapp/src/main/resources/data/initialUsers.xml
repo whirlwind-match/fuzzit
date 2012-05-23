@@ -1,6 +1,8 @@
 <objects>
     <org.fuzzydb.samples.security.WhirlwindUserDetails>
-        <email>guest@justfuzzit.com</email>
+        <email>
+        	<str>guest@justfuzzit.com</str>
+        </email>
         <username>guest@justfuzzit.com</username>
         <password>honoured</password>
         <accountNonExpired>true</accountNonExpired>

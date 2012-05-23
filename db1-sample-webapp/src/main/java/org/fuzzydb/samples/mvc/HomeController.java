@@ -5,6 +5,8 @@ import java.security.Principal;
 import javax.inject.Inject;
 import javax.inject.Provider;
 
+import likemynds.db.KeyFactory;
+
 import org.fuzzydb.samples.MyCounter;
 import org.fuzzydb.samples.repositories.StatsRepository;
 import org.fuzzydb.samples.repositories.UserRepository;
@@ -52,7 +54,7 @@ public class HomeController {
 	public String home(Principal currentUser, Model model) {
 		model.addAttribute("connectionsToProviders", getConnectionRepository().findAllConnections());
 		if (currentUser != null) {
-			model.addAttribute("account", accountRepository.findOne(currentUser.getName()));
+			model.addAttribute("account", accountRepository.findOne(KeyFactory.valueOf(currentUser.getName())));
 		}
 
 		logger.info("Welcome home!");
