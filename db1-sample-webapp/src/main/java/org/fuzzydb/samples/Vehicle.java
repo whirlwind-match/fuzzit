@@ -1,6 +1,8 @@
 package org.fuzzydb.samples;
 
+import com.wwm.db1.spring.annotation.BackingClass;
 
+@BackingClass(org.fuzzydb.samples.model.Vehicle.class)
 public class Vehicle extends BaseEntity {
 
 	private String carMake;
