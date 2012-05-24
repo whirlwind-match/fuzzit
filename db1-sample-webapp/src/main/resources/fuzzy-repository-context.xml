@@ -16,7 +16,7 @@
     <fuzzy:tx-manager />
 
     <fuzzy:store />
-<!--     <fuzzy:initialize /> -->
+    <fuzzy:initialize />
 
     <fuzzy:repositories base-package="org.fuzzydb.samples.repositories" />
 
