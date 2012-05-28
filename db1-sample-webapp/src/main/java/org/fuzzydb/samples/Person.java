@@ -4,9 +4,11 @@ import javax.validation.constraints.Digits;
 
 import org.springframework.data.annotation.Transient;
 
+import com.wwm.db1.spring.annotation.BackingClass;
 import com.wwm.db1.spring.annotation.DerivedField;
 import com.wwm.model.dimensions.IPoint3D;
 
+@BackingClass(org.fuzzydb.samples.model.Person.class)
 public class Person extends BaseEntity {
 	
 	private Boolean isMale;

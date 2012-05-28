@@ -1,7 +1,9 @@
 package org.fuzzydb.samples;
 
+import com.wwm.db1.spring.annotation.BackingClass;
 
 
+@BackingClass(org.fuzzydb.samples.model.Cafe.class)
 public class Cafe extends BaseEntity {
 
 	/**

@@ -20,32 +20,23 @@
 
     <fuzzy:repositories base-package="org.fuzzydb.samples.repositories" />
 
-<!--     <bean id="marshaller" class="org.springframework.oxm.xstream.XStreamMarshaller"> -->
-<!--         <property name="aliases"> -->
-<!--             <map> -->
-<!--                 <entry key="objects" value="java.util.ArrayList"/> -->
-<!--             </map> -->
-<!--         </property> -->
-<!--     </bean> -->
-
-    
     <bean id="userInitialiser" class="com.wwm.db1.spring.repository.RepositoryInitializer">
         <constructor-arg name="repo" ref="userRepository"/>
         <constructor-arg name="unmarshaller" ref="marshaller"/>
         <property name="resources" value="classpath:/data/initialUsers.xml"/>
     </bean>
     
-<!--     <bean id="peopleInitialiser" class="com.wwm.db1.spring.repository.RepositoryInitializer"> -->
-<!--         <constructor-arg name="repo" ref="personRepository"/> -->
-<!--         <constructor-arg name="unmarshaller" ref="marshaller"/> -->
-<!--         <property name="resources" value="classpath:/data/initialPeople.xml"/> -->
-<!--     </bean> -->
+    <bean id="peopleInitialiser" class="com.wwm.db1.spring.repository.RepositoryInitializer">
+        <constructor-arg name="repo" ref="personRepository"/>
+        <constructor-arg name="unmarshaller" ref="marshaller"/>
+        <property name="resources" value="classpath:/data/initialPeople.xml"/>
+    </bean>
 
-<!--     <bean id="cafeInitialiser" class="com.wwm.db1.spring.repository.RepositoryInitializer"> -->
-<!--         <constructor-arg name="repo" ref="cafeRepository"/> -->
-<!--         <constructor-arg name="unmarshaller" ref="marshaller"/> -->
-<!--         <property name="resources" value="classpath:/data/initialCafes.xml"/> -->
-<!--     </bean> -->
+    <bean id="cafeInitialiser" class="com.wwm.db1.spring.repository.RepositoryInitializer">
+        <constructor-arg name="repo" ref="cafeRepository"/>
+        <constructor-arg name="unmarshaller" ref="marshaller"/>
+        <property name="resources" value="classpath:/data/initialCafes.xml"/>
+    </bean>
 
     <bean id="vehicleInitialiser" class="com.wwm.db1.spring.repository.RepositoryInitializer">
         <constructor-arg name="repo" ref="vehicleRepository"/>
