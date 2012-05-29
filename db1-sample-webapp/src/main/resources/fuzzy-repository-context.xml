@@ -15,7 +15,7 @@
     <tx:annotation-driven mode="aspectj" transaction-manager="transactionManager" />
     <fuzzy:tx-manager />
 
-    <fuzzy:store url="wwmdb://x2:27609/com.fuzzydb.DefaultStore" />
+    <fuzzy:store url="wwmdb://x2:27609/SearchDemo" />
 
     <fuzzy:repositories base-package="org.fuzzydb.samples.repositories" />
 

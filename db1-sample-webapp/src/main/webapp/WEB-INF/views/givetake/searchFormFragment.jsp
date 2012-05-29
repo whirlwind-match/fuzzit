@@ -12,6 +12,14 @@
 		<td>Location:</td>
 		<td><sample:edit-input attrName="postcode" popupHelp="Any clue where? (Try the first part of a UK postcode e.g. SE1)" /></td>
 	</tr>
+	<tr>
+		<td>Establishment type: </td>  
+		<td><form:radiobuttons path="establishmentType" items="${establishmentTypes}" /></td>
+	</tr>
+	<tr>
+		<td>Meal Types:</td>
+		<td><form:checkboxes id="mealTypes" path="mealTypes" items="${mealTypes}"/> <form:errors path="mealTypes"/></td>
+	</tr>
 	</table>
 	<input type="submit" value="Search"/>
 </form:form>

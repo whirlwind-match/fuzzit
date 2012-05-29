@@ -17,6 +17,7 @@
         <intercept-url pattern="/signin/**" access="permitAll" />
         <intercept-url pattern="/signup/**" access="permitAll" />
         <intercept-url pattern="/autos/**" access="permitAll" />
+        <intercept-url pattern="/givetake/**" access="permitAll" />
         <intercept-url pattern="/cafes/**" access="permitAll" />
         <intercept-url pattern="/people/**" access="permitAll" />
         <intercept-url pattern="/" access="permitAll" />
