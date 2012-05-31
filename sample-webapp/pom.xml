@@ -19,7 +19,7 @@
 		<org.aspectj-version>1.6.9</org.aspectj-version>
 		<org.slf4j-version>1.6.4</org.slf4j-version>
 		<fuzzydb.version>1.0.0.M4-SNAPSHOT</fuzzydb.version>
-		<org.springframework.mobile-version>1.0.0.M3</org.springframework.mobile-version>
+		<org.springframework.mobile-version>1.0.0.RELEASE</org.springframework.mobile-version>
 	</properties>
 	<dependencies>
 		<dependency>
