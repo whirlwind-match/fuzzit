@@ -14,7 +14,7 @@
 		<div data-role="header" data-position="fixed" data-theme="a">
 			<h1><img src="<c:url value="/static/fuzzit/fuzzit-word.png"/>" height=40px alt="fuzzit" />
 			</h1>
-			<a href="<c:url value="/mobile/home"/>" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
+			<a href="<c:url value="/mobile/grid"/>" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
 			<a href="#search-page" data-role="button" data-rel="page">Search</a> 
 	
 		</div><!-- /header -->
